@@ -1,4 +1,6 @@
 export default {
+  gray: '#e6e6e6',
+
   dateDefaultColor: '#000000',
   dateActiveColor: '#ffffff',
   dateNonCurrentMonthColor: '#757575',
