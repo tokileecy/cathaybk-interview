@@ -12,10 +12,18 @@ export default function Header(props: HeaderProps) {
   const { children, onLeftClick, onRightClick } = props
 
   return (
-    <div className={styles.root}>
-      <div className={cx(styles.arrow, 'left')} onClick={onLeftClick}></div>
+    <div data-testid="calendar-header" className={styles.root}>
+      <div
+        data-testid="calendar-left-button"
+        className={cx(styles.arrow, 'left')}
+        onClick={onLeftClick}
+      ></div>
       <div className={styles.headerContent}>{children}</div>
-      <div className={cx(styles.arrow, 'right')} onClick={onRightClick}></div>
+      <div
+        data-testid="calendar-right-button"
+        className={cx(styles.arrow, 'right')}
+        onClick={onRightClick}
+      ></div>
     </div>
   )
 }

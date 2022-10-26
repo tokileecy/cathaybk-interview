@@ -32,8 +32,11 @@ const Task1Template: Story<CalendarProps> = (args) => {
     args.viewYear ?? today.getFullYear()
   )
 
-  const [startDate, setStartDate] = useState<Date | null>(args.startDate)
-  const [endDate, setEndDate] = useState<Date | null>(args.endDate)
+  const [startDate, setStartDate] = useState<Date | null>(
+    args.startDate ?? null
+  )
+
+  const [endDate, setEndDate] = useState<Date | null>(args.endDate ?? null)
 
   useEffect(() => {
     setViewMonth(args.viewMonth ?? today.getMonth() + 1)
@@ -44,11 +47,11 @@ const Task1Template: Story<CalendarProps> = (args) => {
   }, [args.viewYear])
 
   useEffect(() => {
-    setStartDate(args.startDate)
+    setStartDate(args.startDate ?? null)
   }, [args.startDate])
 
   useEffect(() => {
-    setEndDate(args.endDate)
+    setEndDate(args.endDate ?? null)
   }, [args.endDate])
 
   const handleSelect = (date: Date) => {

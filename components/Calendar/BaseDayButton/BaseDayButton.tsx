@@ -23,6 +23,7 @@ export default function BaseDayButton(props: BaseDayButtonProps) {
 
   return (
     <div
+      data-testid="calendar-base-day-button"
       className={cx(styles.root, {
         active,
         'is-today': isToday,

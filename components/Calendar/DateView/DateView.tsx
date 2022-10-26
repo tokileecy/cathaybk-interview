@@ -110,7 +110,7 @@ export default function DateView(props: DateViewProps) {
     getFieldDatas,
   })
 
-  const headerContent = ` ${viewYear}年${viewMonth}月`
+  const headerContent = `${viewYear}年${viewMonth}月`
 
   const handleFieldClick = (x: number, y: number) => {
     const selectedDate = getDateFromDateViewByMatrixPos(

@@ -22,9 +22,9 @@ export interface CalendarProps {
   /** Calendar Current View Year */
   viewYear?: number
   /** Calendar selected start date */
-  startDate: Date | null
+  startDate?: Date | null
   /** Calendar selected end date */
-  endDate: Date | null
+  endDate?: Date | null
   /** Called when a date is selected */
   onSelect?: (date: Date) => void
   /** Called when left arrow is clicked. */
@@ -38,8 +38,8 @@ export default function Calendar(props: CalendarProps) {
     disableNonCurrentMonthDayClick,
     viewMonth,
     viewYear,
-    startDate,
-    endDate,
+    startDate = null,
+    endDate = null,
     onSelect,
     onLeftClick,
     onRightClick,
