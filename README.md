@@ -107,6 +107,10 @@ export static page.
 yarn export
 ```
 
+### Test
+
+run `yarn test` to test Calendar component
+
 ## Deploy
 
 Deploy Static Production Page to Github Pages.
