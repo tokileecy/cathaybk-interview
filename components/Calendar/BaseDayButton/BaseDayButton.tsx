@@ -4,10 +4,25 @@ import * as styles from './BaseDayButton.styles'
 
 export interface BaseDayButtonProps {
   children?: string | number
+  /**
+   * Disalbe Click Event
+   */
   disableClick?: boolean
+  /**
+   * Display Active Styles
+   */
   active?: boolean
+  /**
+   * Display Non Current Month Styles
+   */
   nonCurrentMonth?: boolean
+  /**
+   * Display isToday Styles
+   */
   isToday?: boolean
+  /**
+   * Call when Day Button Click
+   */
   onClick?: MouseEventHandler<HTMLDivElement>
 }
 

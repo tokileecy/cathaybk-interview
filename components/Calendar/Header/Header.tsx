@@ -4,7 +4,15 @@ import * as styles from './Header.styles'
 
 export interface HeaderProps {
   children?: ReactNode
+  /**
+   * Call when left arrow clicked
+   * @returns
+   */
   onLeftClick?: () => void
+  /**
+   * Call when right arrow clicked
+   * @returns
+   */
   onRightClick?: () => void
 }
 
