@@ -9,7 +9,8 @@ export const cssRoot = css({
   alignItems: 'center',
   fontSize: '16px',
   width: '350px',
-  height: '240px',
+  // ! height should not be 240px, Due to rows should be 6 row.(some month should contain 6 rows, e.g 2022/10)
+  height: '276px',
 })
 
 export type ViewStatus = 'date' | 'month' | 'year'
